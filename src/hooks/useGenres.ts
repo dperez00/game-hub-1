@@ -17,7 +17,7 @@ const useGenres = () => useQuery({
   queryKey: ['genres'],
   queryFn: apiClient.getAll,
   staleTime: 24 * 60 * 60 * 1000, // 24 hours
-  initialData: {count: genres.length, results: genres} // so we don't have to show a spinner
+  initialData: genres
   // when we provide initialData, this data is inserted into the cache.
   // because we gave a stale time of 24 hours, the data will be fresh for 24 hours.
   // no request will be made to the backend to get the genres because of the stale time.
