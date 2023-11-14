@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import APIClient from "../services/api-client";
-import { Game } from "../entities/Game";
+import Game from "../entities/Game";
 
 // we are using the game interface that is in another hook.
 // we dont want one hook to depend on another hook for getting the definition of an interface.
